@@ -15,7 +15,8 @@ class WeatherPage extends StatelessWidget {
         children: [
           Obx(() =>
             Text(
-                controller.weathers.location.name,
+                (controller.weathers.location.name == 'Kan Tho')? 'Cần Thơ'
+                :controller.weathers.location.name,
                 style: const TextStyle(
                   fontSize: 36,
                   color: Colors.white,
